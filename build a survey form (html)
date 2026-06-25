@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">The Ultimate Food Hot Takes Survey</h1>
+        <p id="description">Join the debate and help us settle the world's most controversial culinary questions.</p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number">Spiciness Tolerance:</label>
+          <input type="number" id="number" min="1" max="10" placeholder="1-10" />
+        </div>
+
+        <div class="form-group">
+          <p>The Ultimate Comfort Food</p>
+          <select id="dropdown" required>
+            <option disabled selected value>Select your Comfort Food</option>
+            <option value="Pasta">Developer</option>
+            <option value="Burger">Designer</option>
+            <option value="Suhsi">Manager</option>
+            <option value="Tacos">Student</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Does pineapple belong on pizza?</p>
+          <label>
+            <input name="user-recommend" value="Absolutely" type="radio" class="input-radio" checked /> Absolutely
+          </label>
+          <label>
+            <input name="user-recommend" value="nope" type="radio" class="input-radio" /> No
+          </label>
+          <label>
+            <input name="user-recommend" value="natural" type="radio" class="input-radio" /> I'm neutral
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Which "Trendy" foods are overrated? <span class="clue">(Check all that apply)</span></p>
+          <label>
+            <input name="prefer" value="Avocado" type="checkbox" class="input-checkbox" /> Avocado Toast
+          </label>
+          <label>
+            <input name="prefer" value="truffleoil" type="checkbox" class="input-checkbox" /> Truffle Oil
+          </label>
+          <label>
+            <input name="prefer" value="butterToast" type="checkbox" class="input-checkbox" /> Butter Toast
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Your Most Controversial Take?</p>
+          <textarea id="comments" name="comment" placeholder="Tell us a food opinion that would get you kicked out of a restaurant..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit Survey</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
